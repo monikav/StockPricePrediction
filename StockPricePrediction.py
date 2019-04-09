@@ -28,8 +28,8 @@ def getNewsForDate(date):
     newsFile.close()
 	
 date = datetime.date(2016,10,11) + datetime.timedelta(days=1)
-todayDate = datetime.date.today()
-while date<=todayDate:
+endDate = datetime.date(2017,10,11)
+while date<=endDate:
     getNewsForDate(date)
     date += datetime.timedelta(days = 1) 
 
