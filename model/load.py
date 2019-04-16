@@ -37,7 +37,7 @@ print("Loaded model from disk")
 
 num_test_samples = 25000
 batch_size = 512
-test_filenames = "../input/featureMatrix_1_test.csv"
+test_filenames = "../input/featureMatrix_0_test.csv"
 #Path where your test set is present
 
 my_test_batch_generator = My_Generator(test_filenames,batch_size)
