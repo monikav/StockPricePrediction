@@ -149,7 +149,13 @@ class Glove:
         self.weights = initialWeights
         self.normalConst = normalConst
         plt.plot(allCosts)
+		plt.xlabel('epochs')
+        plt.ylabel('loss')
         plt.show()
+		plt.plot(allCosts)
+		plt.xlabel('epochs')
+        plt.ylabel('loss')
+        plt.savefig('model/TrainingLossGlove.png')
 
     def dumpWeights(self, weightFileLoc):
         savedWeights = [self.weights, self.normalConst.T]

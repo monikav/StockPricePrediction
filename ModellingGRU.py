@@ -88,5 +88,12 @@ def main():
     plt.ylabel('loss')
     plt.legend(['train','validation'],loc='upper left')
     plt.show()
+	plt.plot(modelProgress.history['loss'])
+    plt.plot(modelProgress.history['val_loss'])
+    plt.title('model_loss')
+    plt.xlabel('epochs')
+    plt.ylabel('loss')
+    plt.legend(['train','validation'],loc='upper left')
+    plt.savefig('model/TrainingLossGRU.png')
 
 main()
