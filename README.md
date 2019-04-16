@@ -1,3 +1,0 @@
-# StockPricePrediction
-
-Test
