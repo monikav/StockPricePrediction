@@ -221,7 +221,7 @@ def main(modelPath, wordIndexPath, sentencesPath):
         covarMat=covarMatrix,
         lrngRt=3 * 10e-5,
         rglrRate=0.01,
-        numEpochs=20,
+        numEpochs=2000,
         gradientDes=True,
         useTheano=True
     )
