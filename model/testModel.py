@@ -38,7 +38,7 @@ modelLoaded.compile(loss='categorical_crossentropy', optimizer='adam', metrics=[
 
 confidence = modelLoaded.evaluate_generator(testBatches, steps=(int(np.ceil(NumTest / (batchSize)))),
                                             use_multiprocessing=False, verbose=1)
-predictions = modelLoaded.predict_generator(testBatches, steps=(int(np.ceil(NumTest / (batchSize)))), use_multiprocessing=False, verbose=1)
+#predictions = modelLoaded.predict_generator(testBatches, steps=(int(np.ceil(NumTest / (batchSize)))), use_multiprocessing=False, verbose=1)
 print(confidence)
-print(predictions)
+#print(predictions)
 print("%s: %.2f%%" % (modelLoaded.metrics_names[1], confidence[1] * 100))
